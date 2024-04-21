@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	app := application.New()
+	app := application.New(application.LoadConfig())
 
 	// The NotifyContext method returns two things
 	// A derived context from a root context which can be used to cancel any ongoing tasks based on signal interrupt.
